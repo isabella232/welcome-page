@@ -2,7 +2,7 @@
 //Requires JSON output from authenticating script: http://www.webdevdoor.com/php/authenticating-twitter-feed-timeline-oauth/
 
 $(document).ready(function () {
-    var displaylimit = 6;
+    var displaylimit = 5;
     var twitterprofile = "xTuple";
     var screenname = "xTuple";
     var showdirecttweets = false;
@@ -16,7 +16,7 @@ $(document).ready(function () {
     var loadingHTML = '';
     headerHTML += '<a href="https://twitter.com/" target="_blank"><img src="assets/img/twitter-bird-light.png" width="30" height="24" style="float:left;padding:0px 0px 0px 0px;margin:4px 5px 0px 0px" alt="twitter bird" /></a>';
     headerHTML += '<h1>'+screenname+' <span style="font-size:13px"><a href="https://twitter.com/'+twitterprofile+'" target="_blank">@'+twitterprofile+'</a></span></h1>';
-    loadingHTML += '<div id="loading-container"></div>';
+    loadingHTML += '<div id="loading-container"><img src="images/ajax-loader.gif" width="32" height="32" alt="tweet loader" /></div>';
 
     $('#twitter-feed').html(headerHTML + loadingHTML);
 
